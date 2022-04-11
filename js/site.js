@@ -42,7 +42,18 @@ function generateNumbers(startValue, endValue){
 
     return numbers;
     
+}
 
+// Another example for how to generateNumbers
+// this is called ternary operators
+// Very cool and useful code
+function generateNumbersB(startValue, endValue){
+    let numbers = [];
+    for (let index = startValue; index <= endValue; index++) {
+        let value = ((i % 3 == 0 ? 'Fizz' : '') + (i % 5 == 0 ? 'Buzz' : '') || index);
+        numbers.push(value)
+    }
+    return numbers;
 }
 
 // Display Values
